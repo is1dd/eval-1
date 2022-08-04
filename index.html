@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 16%;
+      height: 225px;
+      justify-content: space-evenly;
+      padding: 31px;
+      border: 1px solid red;
+
+    }
+    input{
+      padding: 5px 10px;
+    }
+    input[type="submit"] {
+      cursor: pointer;
+      background: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 3px;
+
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <!--Create Show Products button here, give id as "show_products". avoid making spelling mistakes in HTML id's-->
+    <button id="show_products">
+      <a href="./inventory.html"> Show Products </a> 
+
+    </button>
+    </div>
+    <div>
+      <h2>Add Products</h2>
+      <!--Create a form here to accept product data from user, give form HTML id as "products"-->
+      <form id="products">
+        <input type="text" placeholder="Enter the type" id="type" />
+        <input type="text" placeholder="Enter the description" id="desc" />
+        <input type="number" placeholder="price" id="price" />
+        <input type="text" placeholder="image link" id="image" />
+        <input type="submit" value="Add Product" id="add_product" />
+      </form>
+      <!--Create four inputs to accept Type, Description, price, & image-->
+      <!--give the inputs following respective id's, "type", "desc", "price","image"-->
+      <!--create a "Add Product" button to submit form, give it html id as "add_product"-->
+      </form>
+    </div>
+  </body>
+</html>
+
+<script src="./scripts/index.js"></script>
